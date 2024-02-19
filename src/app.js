@@ -10,14 +10,15 @@ import "./assets/img/4geeks.ico";
 let pronoun = ["La", "Nuestra"];
 let adj = ["super", "gran"];
 let noun = ["pagina", "bestia"];
-//};
 
-function dominios(datos) {
-  return datos[Math.floor(Math.random() * datos.length)];
+for (let i of pronoun) {
+  for (let j of adj) {
+    for (let k of noun) {
+      //console.log(i + j + k + ".com");
+      console.log(`${i}${j}${k}.com`);
+      document.write(`${i}${j}${k}.com<br>`);
+    }
+  }
 }
-for (let i = 0; i < 10; i++) {
-  document.write(
-    `${dominios(pronoun)}${dominios(adj)}${dominios(noun)}.com<br>`
-  );
-  console.log(`${dominios(pronoun)}${dominios(adj)}${dominios(noun)}.com`);
-}
+//for (let j of adj)
+//for (let k of noun)
